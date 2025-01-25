@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Kayıt Ol | MCA Yazılım </title>
+
+    <!--  Favicon  -->
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+
+    <!--  Plugins CSS/JS  -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap-5/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="./assets/plugins/fontawesome/css/all.min.css"/>
+
+    <!--  Custom CSS  -->
+    <link rel="stylesheet" href="assets/css/custom.css" >
+</head>
+
+<body onload="getTime()" id="loginPage">
+
+<div class="container">
+    <div class="screen">
+
+        <div class="wrapper" data-tilt>
+            <div class="close-button" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">
+                <i class="fa fa-times" style="font-size: 20px; color: #fff"></i>
+            </div>
+
+            <form action="" method="POST" id="form-lock-screen" class="mb-5">
+
+                <h2> Kayıt Ol </h2>
+                <p class="text-white mb-1"> Gerekli Alanları Doldurup Kayıt Olabilirsiniz. </p>
+
+                <div class="input-field">
+                    <input type="text" name="first_name" id="first-name" required>
+                    <label> İsim  </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" name="last_name" id="last-name" required>
+                    <label> Soyisim </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="email" name="email" id="email" required>
+                    <label> E-Posta  </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="password" name="password" id="password" required minlength="8" maxlength="75">
+                    <label> Şifre </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="password" name="re_password" id="re_password" required minlength="8" maxlength="75">
+                    <label> Şifre Tekrar </label>
+                </div>
+
+                <div class="row mt-2 mb-4">
+                    <div class="col-6">
+                        <div class="form-check text-white">
+                            <input class="form-check-input" type="radio" name="gender" id="gender-male" value="male" checked>
+                            <label class="form-check-label" for="gender-male"> Erkek </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-check text-white text-left">
+                            <input class="form-check-input" type="radio" name="gender" id="gender-female" value="female">
+                            <label class="form-check-label" for="gender-female"> Kadın </label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit"> Kayıt Ol </button>
+
+                <div class="register">
+                    <p>
+                        <a href="login.html" class="text-center mb-3 mt-5">
+                            Geri Dön <span> Giriş Yap </span>
+                        </a>
+                    </p>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!--  Plugins JS  -->
+<script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="assets/plugins/bootstrap-5/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/plugins/vanilla-tilt.min.js" type="text/javascript"></script>
+
+<!--  Custom JS  -->
+<script src="assets/js/custom.js" type="text/javascript"></script>
+
+</body>
+</html>
